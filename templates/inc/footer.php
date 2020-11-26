@@ -1,5 +1,5 @@
 <footer class="container">
-    <p>&copy; Job Lister 2017-2020</p>
+    <p>&copy; Job Lister 2020</p>
 </footer>
 </div> <!-- /container -->
 
