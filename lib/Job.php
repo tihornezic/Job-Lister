@@ -17,7 +17,17 @@ class Job {
 
         // assign result set
         $results = $this->db->resultSet();
-        
+
+        return $results;
+    }
+
+    // get categories
+    public function getCategories(){
+        $this->db->query("SELECT * FROM categories");
+
+        // assign result set
+        $results = $this->db->resultSet();
+
         return $results;
     }
 

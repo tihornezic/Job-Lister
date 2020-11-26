@@ -7,4 +7,5 @@ define("DB_PASS", "");
 define("DB_NAME", "job_lister");
 
 define("SITE_TITLE", "Job Lister")
+
 ?>
