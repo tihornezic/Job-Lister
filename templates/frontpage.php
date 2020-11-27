@@ -22,12 +22,12 @@
     </div>
 
     <div class="container">
-        <!-- Example row of columns -->
-
+        <h3><?php echo $title ?></h3>
+        <br>
         <?php foreach ($jobs as $job) : ?>
             <div class="row">
                 <div class="col-md-10">
-                    <h3><?php echo $job->job_title; ?></h3>
+                    <h5><?php echo $job->job_title; ?></h5>
                     <p><?php echo $job->description; ?></p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                 </div>
