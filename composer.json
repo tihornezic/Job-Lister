@@ -1,7 +1,10 @@
 {
-    "name": "some/name",
-    "description": "Some description will be useful too!",
-    "require": {
-        "php": "^7.2.0"
-    }
+    "name": "vendor/name",
+    "authors": [
+        {
+            "name": "Tihor Nezic",
+            "email": "tihor.nezic@gmail.com"
+        }
+    ],
+    "require": {}
 }
