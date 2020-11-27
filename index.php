@@ -20,4 +20,5 @@ if($category){
 $template->categories = $job->getCategories();
 
 echo $template
+
 ?>
