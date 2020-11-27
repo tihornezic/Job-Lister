@@ -8,13 +8,15 @@
         <div class="container">
             <!-- <h1 class="display-3"><?php echo SITE_TITLE ?></h1> -->
             <h1 class="display-3">Find a Job</h1>
-            <form action="">
+            <form action="index.php" method="GET">
                 <select name="category" class="form-control">
                     <option value="0">Choose a Category</option>
                     <?php foreach ($categories as $category) : ?>
                         <option value="<?php echo $category->id; ?>"><?php echo $category->name ?></option>
                     <?php endforeach; ?>
                 </select>
+                <br>
+                <input type="submit" class="btn btn-lg btn-success custom-btn-width" value="Find">
             </form>
         </div>
     </div>

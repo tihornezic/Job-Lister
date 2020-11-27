@@ -12,3 +12,7 @@
       font-size: 3.5rem;
     }
   }
+
+.custom-btn-width {
+  width: 120px;
+}
