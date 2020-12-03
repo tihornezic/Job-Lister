@@ -9,14 +9,16 @@ $template = new Template('templates/frontpage.php');
 $category = isset($_GET['category']) ? $_GET['category'] : null;
 
 if($category){
+    // 
+    $template->title = 'Jobs in ' . $job->getCategory($category)->name;
+    // for displaying selected jobs by category
     $template->jobs = $job->getByCategory($category);
-    $template->title = 'Jobs in ' .$job->getCategory($category)->name;
 } else {
     $template->title = 'Latest Jobs';
     $template->jobs = $job->getAllJobs();
 }
 
-
+// categories dropdown
 $template->categories = $job->getCategories();
 
 echo $template
