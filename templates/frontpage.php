@@ -26,7 +26,7 @@
         <?php foreach ($jobs as $job) : ?>
             <div class="row">
                 <div class="col-md-10">
-                    <h5><?php echo $job->job_title; ?></h5>
+                    <h5><?php echo $job->job_title; ?> (<?php echo $job->location; ?>)</h5>
                     <p><?php echo $job->description; ?></p>
                     <p class="cname"><?php echo $job->cname; ?></p>
                     <p><a class="btn btn-secondary" href="job.php?id=<?php echo $job->id; ?>" role="button">View details &raquo;</a></p>
