@@ -1,11 +1,11 @@
 <?php include 'inc/header.php'; ?>
 
-
 <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
+            <?php displayMessage(); ?>
             <h1 class="display-3">Find a Job</h1>
             <form action="index.php" method="GET">
                 <select name="category" class="form-control">
@@ -28,7 +28,7 @@
                 <div class="col-md-10">
                     <h5><?php echo $job->job_title; ?> (<?php echo $job->location; ?>)</h5>
                     <p><?php echo $job->description; ?></p>
-                    <p class="cname"><?php echo $job->cname; ?></p>
+                    <p class="cname">Category: <?php echo $job->cname; ?></p>
                     <p><a class="btn btn-secondary" href="job.php?id=<?php echo $job->id; ?>" role="button">View details &raquo;</a></p>
                 </div>
             </div>
